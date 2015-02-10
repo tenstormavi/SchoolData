@@ -1,0 +1,6 @@
+<h2>Search Page</h2>
+<h3>Search any student by firstname or lastname</h3>
+<form action="/search/" method="post" name="myForm">{% csrf_token %}
+	<input type="text" name="search" placeholder="Search"/>
+	<input type="submit" />
+</form>

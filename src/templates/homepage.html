@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Welcome to Homepage</h2>
+<hr>
+<p>Click Insert for new data insertion or Search for Search anything.</p>
+<form action="/insert/" method="get" name="myForm2">{% csrf_token %}
+	<input class="btn btn-success" type="submit" value="Insert"/>
+</form><br>
+<form action="/searchpage/" method="get" name="myForm3">{% csrf_token %}
+	<input class="btn btn-success" type="submit" value="Search" />
+</form>
+{% endblock %}
